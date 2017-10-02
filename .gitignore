@@ -1,0 +1,7 @@
+workdir/*.class
+workdir/*.java
+workdir/classname
+workdir/stdin
+workdir/stdout
+workdir/stderr
+workdir/stderr-javac

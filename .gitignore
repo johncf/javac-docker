@@ -1,7 +1,9 @@
-workdir/*.class
-workdir/*.java
-workdir/classname
-workdir/stdin
-workdir/stdout
-workdir/stderr
-workdir/stderr-javac
+*/*.class
+*/*.java
+*/compile-run.sh
+*/source
+*/classname
+*/stdin
+*/stdout
+*/stderr
+*/stderr-javac

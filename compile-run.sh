@@ -4,7 +4,9 @@ set -e
 
 CNAME=$(cat classname)
 
-set -x
-
 javac $CNAME.java 2>stderr-javac
-java $CNAME <stdin >stdout 2>stderr
+
+set +e
+
+timeout -t2 java $CNAME <stdin >stdout 2>stderr
+echo "Exited with code: $?"
